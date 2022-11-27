@@ -12,23 +12,40 @@ class LearnBundelCard extends StatefulWidget {
 class _LearnBundelCardState extends State<LearnBundelCard> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(10),
-          child: Ink(
-            color: Colors.amberAccent,
-            child: InkWell(
-              child: Container(
-                decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(20)),
-                height: 200,
-              ),
-              onTap: () {},
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Material(
+        color: Colors.orangeAccent,
+        borderRadius: BorderRadius.circular(30),
+        child: InkWell(
+          splashColor: Colors.blueAccent,
+          borderRadius: BorderRadius.circular(30),
+          onTap: () {},
+          child: SizedBox(
+            width: double.infinity,
+            height: 200,
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(40, 85, 16, 0),
+                  child: Row(
+                    children: const [
+                      Text(
+                        "HTML",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
         ),
-      ],
+      ),
     );
   }
 }
