@@ -9,8 +9,8 @@ import 'package:line_icons/line_icons.dart';
 import 'package:pusingoding/page/about.dart';
 import 'package:pusingoding/page/historypage.dart';
 import 'package:pusingoding/page/homepage.dart';
-import 'package:pusingoding/widget_learn/learn_app_bar.dart';
-import 'package:pusingoding/widget_learn/learn_page.dart';
+import 'package:pusingoding/folder_notused/learn_app_bar.dart';
+import 'package:pusingoding/page/learn_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
