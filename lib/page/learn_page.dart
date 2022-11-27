@@ -45,6 +45,7 @@ class _LearnPageState extends State<LearnPage> {
                   width: 45,
                   alignment: Alignment.center,
                   child: InkWell(
+                    radius: 40,
                     onTap: () => Navigator.push(
                         context, MaterialPageRoute(builder: (_) => Profile())),
                     child: CircleAvatar(
