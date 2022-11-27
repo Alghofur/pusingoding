@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -18,30 +18,47 @@ class _LearnBundelCardState extends State<LearnBundelCard> {
         color: Colors.orangeAccent,
         borderRadius: BorderRadius.circular(30),
         child: InkWell(
-          splashColor: Colors.blueAccent,
+          splashColor: Color.fromARGB(255, 255, 102, 0),
           borderRadius: BorderRadius.circular(30),
           onTap: () {},
           child: SizedBox(
             width: double.infinity,
             height: 200,
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(40, 85, 16, 0),
-                  child: Row(
-                    children: const [
-                      Text(
-                        "HTML",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 30,
-                        ),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "HTML",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 30,
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
-                ),
-              ],
+                  SizedBox(
+                    width: 5,
+                  ),
+                  AspectRatio(
+                    aspectRatio: 0.85,
+                    child: Image.asset(
+                      "assets/images/html-5.png",
+                      fit: BoxFit.contain,
+                      alignment: Alignment.centerLeft,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),

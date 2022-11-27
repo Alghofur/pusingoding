@@ -68,6 +68,8 @@ class _LearnPageState extends State<LearnPage> {
         children: [
           SearchField(),
           LearnBundelCard(),
+          LearnBundelCard(),
+          LearnBundelCard(),
         ],
       ),
     );
