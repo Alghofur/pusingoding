@@ -14,7 +14,13 @@ class _SubMateriPageState extends State<SubMateriPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Materi HTML"),
+        title: Text(
+          "Materi HTML",
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        elevation: 0,
       ),
     );
   }

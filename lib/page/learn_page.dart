@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:pusingoding/page/profiledev.dart';
-import 'package:pusingoding/widget_learn/learn_bundel.dart';
-import 'package:pusingoding/widget_learn/search/search.dart';
+import 'package:pusingoding/widget/learn_bundel.dart';
+import 'package:pusingoding/widget/search/search.dart';
 
 class LearnPage extends StatefulWidget {
   const LearnPage({super.key});
