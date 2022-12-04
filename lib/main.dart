@@ -6,11 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:pusingoding/page/about.dart';
-import 'package:pusingoding/page/historypage.dart';
-import 'package:pusingoding/page/homepage.dart';
-import 'package:pusingoding/folder_notused/learn_app_bar.dart';
-import 'package:pusingoding/page/learn_page.dart';
+import 'package:pusingoding/screens/about.dart';
+import 'package:pusingoding/screens/historypage.dart';
+import 'package:pusingoding/screens/homepage.dart';
+import 'package:pusingoding/screens/learn_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(

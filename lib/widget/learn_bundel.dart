@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:pusingoding/page/materi_html_page.dart';
+import 'package:pusingoding/screens/materi_html_page.dart';
 
 class LearnBundelCard extends StatefulWidget {
   const LearnBundelCard({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _LearnBundelCardState extends State<LearnBundelCard> {
           splashColor: Color.fromARGB(255, 255, 102, 0),
           borderRadius: BorderRadius.circular(30),
           onTap: (() => Navigator.push(
-              context, MaterialPageRoute(builder: (_) => SubMateriPage()))),
+              context, MaterialPageRoute(builder: (_) => MateriHtml()))),
           child: SizedBox(
             width: double.infinity,
             height: 200,
