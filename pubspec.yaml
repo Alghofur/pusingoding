@@ -42,6 +42,7 @@ dependencies:
   anim_search_bar: ^2.0.2
   easy_debounce: ^2.0.2+1
   provider: ^6.0.4
+  page_transition: ^2.0.9
  
 dev_dependencies:
   flutter_test:

@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class SubMateriPage extends StatefulWidget {
-  const SubMateriPage({super.key});
+class MateriHtml extends StatefulWidget {
+  const MateriHtml({super.key});
 
   @override
-  State<SubMateriPage> createState() => _SubMateriPageState();
+  State<MateriHtml> createState() => _MateriHtmlState();
 }
 
-class _SubMateriPageState extends State<SubMateriPage> {
+class _MateriHtmlState extends State<MateriHtml> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
