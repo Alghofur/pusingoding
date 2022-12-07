@@ -1,21 +1,55 @@
-import "package:flutter/material.dart";
-
 class Html {
-  final int id;
+  final int htmlId;
+  final String materiKe;
   final String judul;
-  final Color color;
+  final String imageSrc;
+  final String isiMateri;
 
-  Html({required this.id, required this.judul, required this.color});
+  Html({
+    required this.htmlId,
+    required this.materiKe,
+    required this.judul,
+    required this.imageSrc,
+    required this.isiMateri,
+  });
+
+  //list materi html
+
+  static List<Html> htmlList = [
+    Html(
+      htmlId: 0,
+      materiKe: "Materi ke 1",
+      judul: "Sejarah HTML",
+      imageSrc: "assets/images/web-programming.png",
+      isiMateri: "LOREM IPSUM",
+    ),
+    Html(
+      htmlId: 1,
+      materiKe: "Materi ke 2",
+      judul: "Pengenalan HTML",
+      imageSrc: "assets/images/web-programming.png",
+      isiMateri: "LOREM IPSUM",
+    ),
+    Html(
+      htmlId: 2,
+      materiKe: "Materi ke 3",
+      judul: "Tag, Elemen, dan Atribut",
+      imageSrc: "assets/images/web-programming.png",
+      isiMateri: "LOREM IPSUM",
+    ),
+    Html(
+      htmlId: 3,
+      materiKe: "Materi ke 4",
+      imageSrc: "assets/images/web-programming.png",
+      judul: "Membuat Paragraf",
+      isiMateri: "LOREM IPSUM",
+    ),
+    Html(
+      htmlId: 4,
+      materiKe: "Materi ke 5",
+      judul: "Cara Membuat Komentar",
+      imageSrc: "assets/images/web-programming.png",
+      isiMateri: "LOREM IPSUM",
+    ),
+  ];
 }
-
-//list materi html
-
-List<Html> materiHtml = [
-  Html(id: 1, judul: "Sejarah HTML", color: Colors.white),
-  Html(id: 2, judul: "Macam Tag HTML", color: Colors.white),
-  Html(id: 3, judul: "Coming Soon", color: Colors.white),
-  Html(id: 4, judul: "Coming Soon", color: Colors.white),
-  Html(id: 5, judul: "Coming Soon", color: Colors.white),
-  Html(id: 6, judul: "Coming Soon", color: Colors.white),
-  Html(id: 7, judul: "Coming Soon", color: Colors.white),
-];

@@ -30,54 +30,50 @@ class _SearchFieldState extends State<SearchField> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
-            child: TextFormField(
-              controller: textController,
-              onChanged: (_) => EasyDebounce.debounce('textController',
-                  Duration(milliseconds: 2000), () => setState(() {})),
-              obscureText: false,
-              decoration: InputDecoration(
-                  labelText: 'mau belajar apa hari ini? >_<',
-                  labelStyle: TextStyle(color: Colors.white),
-                  enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0x00000000), width: 1),
-                      borderRadius: BorderRadius.circular(12)),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1,
-                      ),
-                      borderRadius: BorderRadius.circular(12)),
-                  errorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1,
-                      ),
-                      borderRadius: BorderRadius.circular(12)),
-                  focusedErrorBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0x00000000),
-                        width: 1,
-                      ),
-                      borderRadius: BorderRadius.circular(12)),
-                  filled: true,
-                  fillColor: Color(0xFF92E0EB),
-                  prefixIcon: Icon(Icons.search)),
-            ),
+    return Column(
+      mainAxisSize: MainAxisSize.max,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+          child: TextFormField(
+            controller: textController,
+            onChanged: (_) => EasyDebounce.debounce('textController',
+                Duration(milliseconds: 2000), () => setState(() {})),
+            obscureText: false,
+            decoration: InputDecoration(
+                labelText: 'mau belajar apa hari ini? >_<',
+                labelStyle: TextStyle(color: Colors.white),
+                enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0x00000000), width: 1),
+                    borderRadius: BorderRadius.circular(12)),
+                focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0x00000000),
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(12)),
+                errorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0x00000000),
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(12)),
+                focusedErrorBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0x00000000),
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(12)),
+                filled: true,
+                fillColor: Color(0xFF92E0EB),
+                prefixIcon: Icon(Icons.search)),
           ),
-          SizedBox(
-            height: 10,
-          ),
-        ],
-      ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+      ],
     );
   }
 }
