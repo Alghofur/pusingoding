@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_import
 
 import 'package:flutter/material.dart';
-import 'package:pusingoding/screens/profiledev.dart';
+import 'package:pusingoding/screens/easterEgg_profiledev.dart';
 import 'package:pusingoding/widget/learn_bundel.dart';
 import 'package:pusingoding/widget/search/search.dart';
 
