@@ -35,12 +35,11 @@ class _DetailHtmlPageState extends State<DetailHtmlPage> {
                     height: 40,
                     width: 40,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Constant.primaryColor.withOpacity(.15),
-                    ),
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.orangeAccent),
                     child: Icon(
                       Icons.close,
-                      color: Constant.primaryColor,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -53,11 +52,11 @@ class _DetailHtmlPageState extends State<DetailHtmlPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 50, right: 20, top: 85),
+                    padding: EdgeInsets.only(left: 25, right: 20, top: 90),
                     child: Text(
                       _htmlList[widget.htmlId].judul,
                       style: const TextStyle(
-                        fontSize: 25,
+                        fontSize: 20,
                         fontFamily: "Poppins",
                       ),
                     ),
@@ -71,11 +70,11 @@ class _DetailHtmlPageState extends State<DetailHtmlPage> {
             left: 0,
             right: 0,
             child: Container(
-              padding: const EdgeInsets.only(top: 30, left: 30, right: 30),
+              padding: const EdgeInsets.only(top: 0, left: 30, right: 30),
               height: 500,
               width: size.width,
               decoration: BoxDecoration(
-                color: Constant.primaryColor.withOpacity(.4),
+                color: Colors.orangeAccent,
                 borderRadius: const BorderRadius.only(
                   topRight: Radius.circular(55),
                   topLeft: Radius.circular(55),

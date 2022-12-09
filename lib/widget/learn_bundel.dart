@@ -44,6 +44,17 @@ class _LearnBundelCardState extends State<LearnBundelCard> {
                               fontSize: 30,
                             ),
                           ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "HTML adalah bahasa standar pemrogaman yang digunakan untuk membuat halaman website",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
                         ],
                       ),
                     ),

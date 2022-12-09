@@ -28,8 +28,8 @@ class MateriHtmlWidget extends StatelessWidget {
       },
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.cyan.withOpacity(1),
-          borderRadius: BorderRadius.circular(10),
+          color: Colors.orangeAccent,
+          borderRadius: BorderRadius.circular(30),
         ),
         height: 80.0,
         padding: const EdgeInsets.only(left: 10, top: 10),

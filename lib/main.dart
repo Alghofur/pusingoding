@@ -47,7 +47,7 @@ class _StartPageState extends State<StartPage> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 1),
+        Duration(seconds: 5),
         () => Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => BottomNavbar())));
   }
@@ -91,7 +91,9 @@ class _StartPageState extends State<StartPage> {
               ),
             ],
           ),
-          CircularProgressIndicator(),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
         ],
       ),
     ));
@@ -134,7 +136,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
             gap: 8,
             activeColor: Colors.black,
             duration: Duration(milliseconds: 400),
-            tabBackgroundColor: Colors.grey[100]!,
+            tabBackgroundColor: Color(0xFF92E0EB),
             color: Colors.black,
             iconSize: 24,
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),

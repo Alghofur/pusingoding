@@ -24,10 +24,11 @@ class _MateriHtmlState extends State<MateriHtml> {
         title: const Text(
           "Materi HTML",
           style: TextStyle(
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.bold,
           ),
         ),
         elevation: 0,
+        backgroundColor: Colors.orangeAccent,
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 30),

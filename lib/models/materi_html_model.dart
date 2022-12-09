@@ -40,7 +40,7 @@ class Html {
       htmlId: 1,
       materiKe: "Materi ke 2",
       judul: "Pengenalan HTML",
-      imageSrc: "assets/images/web-programming.png",
+      imageSrc: "assets/images/new-project.png",
       paragraf1: "LOREM IPSUM",
       paragraf2: "LOREM IPSUM",
       paragraf3: "LOREM IPSUM",
@@ -49,7 +49,7 @@ class Html {
     Html(
       htmlId: 2,
       materiKe: "Materi ke 3",
-      judul: "Tag, Elemen, dan Atribut",
+      judul: "Tag,Elemen,dan Atribut",
       imageSrc: "assets/images/web-programming.png",
       paragraf1: "LOREM IPSUM",
       paragraf2: "LOREM IPSUM",
@@ -59,7 +59,7 @@ class Html {
     Html(
       htmlId: 3,
       materiKe: "Materi ke 4",
-      imageSrc: "assets/images/web-programming.png",
+      imageSrc: "assets/images/space.png",
       judul: "Membuat Paragraf",
       paragraf1: "LOREM IPSUM",
       paragraf2: "LOREM IPSUM",
@@ -69,8 +69,8 @@ class Html {
     Html(
       htmlId: 4,
       materiKe: "Materi ke 5",
-      judul: "Cara Membuat Komentar",
-      imageSrc: "assets/images/web-programming.png",
+      judul: "Membuat Komentar",
+      imageSrc: "assets/images/chat.png",
       paragraf1: "LOREM IPSUM",
       paragraf2: "LOREM IPSUM",
       paragraf3: "LOREM IPSUM",
